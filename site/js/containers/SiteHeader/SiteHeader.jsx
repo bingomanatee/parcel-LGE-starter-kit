@@ -1,30 +1,37 @@
 import React, { PureComponent } from 'react';
-import { Box, Text, Button } from 'grommet';
+import {
+  Box, Heading, Text, Button,
+} from 'grommet';
+
+import Navigation from '../Navigation';
 
 export default class SiteHeader extends PureComponent {
   render() {
     return (
-      <Box direction="row" background="brand" gap="medium" pad="none" align="center"
-           alignContent="stretch'"
-           as="header"
-           fill="vertical"
-           className="SiteHeaderContainer">
-        <Box basis="300px" direction="column" className="logo" align="center">
+      <Box
+        direction="row"
+        gap="medium"
+        pad="medium"
+        align="center"
+        alignContent="stretch"
+        as="header"
+        fill="horizontal"
+        justify="between"
+        elevation="medium"
+      >
+        <Box basis="300px" direction="row" className="logo" align="start" gap="small">
           <img src="/img/logo.svg" />
-          <Text
+          <Heading
             as="div"
-            size="1.25rem"
-            color="accent-3"
-            style={({ fontFamily: 'LotaGrotesqueAlt2-Black' })}
+            size="20px"
+            color="black"
+            style={({ letterSpacing: '4px', lineHeight: 1.4, fontFamily: '"Anomalie Sans Black", "Helvetica Neue", Helvetica, sans-serif' })}
           >
-SITE NAME
-          </Text>
+            ANOMALIE
+          </Heading>
         </Box>
-        <Box direction="row-reverse" fill align="center" className="nav">
-          <div style={({ padding: '1rem' })}>
-            <Button plain href="/logout">User "Fred Smith"</Button>
-          </div>
-        </Box>
+
+        <Navigation />
       </Box>
     );
   }

@@ -4,18 +4,17 @@ import { Grommet, Grid, Box } from 'grommet';
 
 import SiteHeader from '../SiteHeader';
 import Content from '../../views/Content';
-import Navigation from '../Navigation';
 
 import MainGrid from './MainGrid';
+import theme from '../../theme';
 
 // pages
 
-import Home from '../pages/Home';
-import Beta from '../pages/Beta';
-import theme from '../../theme';
+import Home from '../../pages/Home';
+import DressStyles from '../../pages/admin/DressStyles';
+import DressStylesEdit from '../../pages/admin/DressStylesEdit/DressStylesEdit';
 
 export default class Main extends PureComponent {
-
   render() {
     return (
       <main>
@@ -24,14 +23,12 @@ export default class Main extends PureComponent {
             <Box gridArea="header">
               <SiteHeader />
             </Box>
-            <Box gridArea="nav">
-              <Navigation />
-            </Box>
             <Box gridArea="main">
               <Content>
                 <Switch>
                   <Route path="/" exact component={Home} />
-                  <Route path="/beta" exact component={Beta} />
+                  <Route path="/admin/dress-styles/:id" component={DressStylesEdit} />
+                  <Route path="/admin/dress-styles" exact component={DressStyles} />
                   <Route component={Home} />
                 </Switch>
               </Content>

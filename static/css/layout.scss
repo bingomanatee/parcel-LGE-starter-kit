@@ -1,6 +1,6 @@
-@import './constants.scss';
-@import './layout/grid.scss';
-@import './layout/button.scss';
+@import 'constants';
+@import 'layout/grid';
+@import 'layout/button';
 
 html, body, #root {
   margin: 0;

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Anomalie Sans";
+
+  src: url("afe919497d7fcaec4232e957866aeae3/fonts/Sans-400-7f27c6d6ba365e65d40e1fe911e31f58b7cde4dde87bf5941684b2ce2459a462.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Anomalie Sans Bold";
+
+  src: url("9e8cc8480f005d16e740fe28d7c057f8/fonts/Sans-500-ba125dda30cce272f3178b93e6e75be7c52bd2909507bf5b6c17e6c95c7b3951.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Anomalie Sans black";
+  src: url("c6e77f428626a94586690dcb10c75048/fonts/Sans-700-775e232c1b283f43595ead99fff89d24fd1d64c0e796cc3b22755af3343c1557.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
